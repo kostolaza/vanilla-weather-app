@@ -56,6 +56,7 @@ li:first-letter{
     font-size: 64px;
     font-weight: 400;
     line-height: 1;
+    
 }
 .weather-temperature .units {
     position: relative;
@@ -63,6 +64,11 @@ li:first-letter{
     top: -32px;
 }
 
-.celsius {
+.weather-temperature .active {
+    color: black;
+    cursor: default;
+}
+
+.weather-temperature .active:hover {
     text-decoration: none;
 }
