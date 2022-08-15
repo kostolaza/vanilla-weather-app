@@ -75,6 +75,7 @@ function getForecast(coordinates) {
     axios.get(apiUrl).then(displayForecast);
 }
 
+
 function displayTemperature(response) {
     
     let temperatureElement = document.querySelector("#temperature");
@@ -85,7 +86,7 @@ function displayTemperature(response) {
     let dateElement=document.querySelector("#date");
     let iconElement=document.querySelector("#icon");
     
-    celsiusTemperature = response.data.main.temp;
+    
     
     temperatureElement.innerHTML = Math.round(response.data.main.temp);
     cityElement.innerHTML=response.data.name;
